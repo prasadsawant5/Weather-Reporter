@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_daily" rowHeight="400" id="igl-jP-LJ3" customClass="TableCellTableViewCell" customModule="Weather_Reporter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="igl-jP-LJ3" id="cnk-nd-UnU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="399.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="temperature_ios" translatesAutoresizingMaskIntoConstraints="NO" id="EHd-1h-AcW">
+                        <rect key="frame" x="27" y="65" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pressure_ios" translatesAutoresizingMaskIntoConstraints="NO" id="fi8-xX-xip">
+                        <rect key="frame" x="27" y="131" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dew_point_ios" translatesAutoresizingMaskIntoConstraints="NO" id="olS-Aq-E9c">
+                        <rect key="frame" x="27" y="197" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="humidity_ios" translatesAutoresizingMaskIntoConstraints="NO" id="Duf-5Y-46U">
+                        <rect key="frame" x="27" y="263" width="50" height="50"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wind_speed_ios" translatesAutoresizingMaskIntoConstraints="NO" id="jYm-2I-JZc">
+                        <rect key="frame" x="27" y="330" width="50" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5q-U6-tmY">
+                        <rect key="frame" x="139" y="145" width="117" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktb-eW-LHI">
+                        <rect key="frame" x="139" y="215" width="117" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-oe-NHk">
+                        <rect key="frame" x="139" y="277" width="117" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjp-1C-ZUi">
+                        <rect key="frame" x="139" y="344" width="117" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-rN-73J">
+                        <rect key="frame" x="139" y="79" width="117" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xc-RZ-Th4">
+                        <rect key="frame" x="27" y="17" width="267" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EHd-1h-AcW" firstAttribute="top" secondItem="3Xc-RZ-Th4" secondAttribute="bottom" constant="27" id="Be9-Vl-iWa"/>
+                    <constraint firstItem="3Xc-RZ-Th4" firstAttribute="leading" secondItem="cnk-nd-UnU" secondAttribute="leadingMargin" constant="19" id="SbI-HW-I22"/>
+                    <constraint firstItem="3Xc-RZ-Th4" firstAttribute="top" secondItem="cnk-nd-UnU" secondAttribute="topMargin" constant="9" id="efj-BX-tlL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3Xc-RZ-Th4" secondAttribute="trailing" constant="18" id="z5k-Sq-wYO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelDewPoint" destination="Ktb-eW-LHI" id="rw5-Nc-V2R"/>
+                <outlet property="labelHumidity" destination="ChB-oe-NHk" id="S3K-O5-eBc"/>
+                <outlet property="labelPressure" destination="t5q-U6-tmY" id="R7z-A3-DRY"/>
+                <outlet property="labelTemperature" destination="d9B-rN-73J" id="rdv-Oc-GPd"/>
+                <outlet property="labelTitle" destination="3Xc-RZ-Th4" id="THa-qm-PSd"/>
+                <outlet property="labelWindSpeed" destination="Rjp-1C-ZUi" id="FRK-3B-iKp"/>
+            </connections>
+            <point key="canvasLocation" x="265" y="251"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dew_point_ios" width="50" height="50"/>
+        <image name="humidity_ios" width="50" height="50"/>
+        <image name="pressure_ios" width="50" height="50"/>
+        <image name="temperature_ios" width="50" height="50"/>
+        <image name="wind_speed_ios" width="50" height="50"/>
+    </resources>
+</document>

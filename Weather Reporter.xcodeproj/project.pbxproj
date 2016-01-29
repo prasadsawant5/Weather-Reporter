@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D61D6521C5761BB00707708 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61D6511C5761BB00707708 /* Reachability.swift */; };
+		0D61D6561C57688900707708 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D61D6551C57688900707708 /* MBProgressHUD.m */; };
+		0D61D65C1C59A3D800707708 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61D65B1C59A3D800707708 /* DailyViewController.swift */; };
+		0D61D6601C59E48B00707708 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D61D65F1C59E48B00707708 /* CustomTableCell.xib */; };
+		0D61D6621C59E5E900707708 /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61D6611C59E5E900707708 /* TableCellTableViewCell.swift */; };
+		0D61D6641C5A09A900707708 /* HourlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61D6631C5A09A900707708 /* HourlyViewController.swift */; };
 		0D7910011C50C91D004A333E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7910001C50C91D004A333E /* AppDelegate.swift */; };
 		0D7910031C50C91D004A333E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7910021C50C91D004A333E /* ViewController.swift */; };
 		0D7910061C50C91D004A333E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7910041C50C91D004A333E /* Main.storyboard */; };
@@ -14,6 +20,7 @@
 		0D79100B1C50C91D004A333E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7910091C50C91D004A333E /* LaunchScreen.storyboard */; };
 		0D7910161C50C91D004A333E /* Weather_ReporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7910151C50C91D004A333E /* Weather_ReporterTests.swift */; };
 		0D7910211C50C91D004A333E /* Weather_ReporterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7910201C50C91D004A333E /* Weather_ReporterUITests.swift */; };
+		0D79102F1C50C974004A333E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D79102E1C50C974004A333E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D61D6511C5761BB00707708 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		0D61D6531C57688800707708 /* Weather Reporter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weather Reporter-Bridging-Header.h"; sourceTree = "<group>"; };
+		0D61D6541C57688900707708 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0D61D6551C57688900707708 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0D61D65B1C59A3D800707708 /* DailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		0D61D65F1C59E48B00707708 /* CustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableCell.xib; sourceTree = "<group>"; };
+		0D61D6611C59E5E900707708 /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
+		0D61D6631C5A09A900707708 /* HourlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewController.swift; sourceTree = "<group>"; };
 		0D790FFD1C50C91D004A333E /* Weather Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7910001C50C91D004A333E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D7910021C50C91D004A333E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,7 @@
 		0D79101C1C50C91D004A333E /* Weather ReporterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather ReporterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7910201C50C91D004A333E /* Weather_ReporterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_ReporterUITests.swift; sourceTree = "<group>"; };
 		0D7910221C50C91D004A333E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D79102E1C50C974004A333E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D79102F1C50C974004A333E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,7 @@
 		0D790FF41C50C91D004A333E = {
 			isa = PBXGroup;
 			children = (
+				0D79102E1C50C974004A333E /* CoreLocation.framework */,
 				0D790FFF1C50C91D004A333E /* Weather Reporter */,
 				0D7910141C50C91D004A333E /* Weather ReporterTests */,
 				0D79101F1C50C91D004A333E /* Weather ReporterUITests */,
@@ -100,9 +118,17 @@
 				0D7910001C50C91D004A333E /* AppDelegate.swift */,
 				0D7910021C50C91D004A333E /* ViewController.swift */,
 				0D7910041C50C91D004A333E /* Main.storyboard */,
+				0D61D6541C57688900707708 /* MBProgressHUD.h */,
+				0D61D6551C57688900707708 /* MBProgressHUD.m */,
 				0D7910071C50C91D004A333E /* Assets.xcassets */,
 				0D7910091C50C91D004A333E /* LaunchScreen.storyboard */,
 				0D79100C1C50C91D004A333E /* Info.plist */,
+				0D61D6511C5761BB00707708 /* Reachability.swift */,
+				0D61D6531C57688800707708 /* Weather Reporter-Bridging-Header.h */,
+				0D61D65B1C59A3D800707708 /* DailyViewController.swift */,
+				0D61D65F1C59E48B00707708 /* CustomTableCell.xib */,
+				0D61D6611C59E5E900707708 /* TableCellTableViewCell.swift */,
+				0D61D6631C5A09A900707708 /* HourlyViewController.swift */,
 			);
 			path = "Weather Reporter";
 			sourceTree = "<group>";
@@ -193,6 +219,11 @@
 				TargetAttributes = {
 					0D790FFC1C50C91D004A333E = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					0D7910101C50C91D004A333E = {
 						CreatedOnToolsVersion = 7.3;
@@ -232,6 +263,7 @@
 				0D79100B1C50C91D004A333E /* LaunchScreen.storyboard in Resources */,
 				0D7910081C50C91D004A333E /* Assets.xcassets in Resources */,
 				0D7910061C50C91D004A333E /* Main.storyboard in Resources */,
+				0D61D6601C59E48B00707708 /* CustomTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D61D6641C5A09A900707708 /* HourlyViewController.swift in Sources */,
 				0D7910031C50C91D004A333E /* ViewController.swift in Sources */,
 				0D7910011C50C91D004A333E /* AppDelegate.swift in Sources */,
+				0D61D6521C5761BB00707708 /* Reachability.swift in Sources */,
+				0D61D6561C57688900707708 /* MBProgressHUD.m in Sources */,
+				0D61D6621C59E5E900707708 /* TableCellTableViewCell.swift in Sources */,
+				0D61D65C1C59A3D800707708 /* DailyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Weather Reporter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irrationalstudio.Weather-Reporter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weather Reporter/Weather Reporter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +448,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Weather Reporter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.irrationalstudio.Weather-Reporter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weather Reporter/Weather Reporter-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -480,6 +522,7 @@
 				0D7910271C50C91D004A333E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D7910281C50C91D004A333E /* Build configuration list for PBXNativeTarget "Weather ReporterTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +531,7 @@
 				0D79102A1C50C91D004A333E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D79102B1C50C91D004A333E /* Build configuration list for PBXNativeTarget "Weather ReporterUITests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +540,7 @@
 				0D79102D1C50C91D004A333E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
