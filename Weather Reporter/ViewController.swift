@@ -35,12 +35,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     struct Constants {
         static let urlString = "https://api.forecast.io/forecast/e22dd680d4a3d0d11ab8ef37404eee5e/"
+        static let TAG = "ViewController"
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(Constants.TAG + " viewDidLoad()")
         
         let nsUserDefaults = NSUserDefaults.standardUserDefaults()
         

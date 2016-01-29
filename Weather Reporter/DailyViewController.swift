@@ -15,6 +15,7 @@ class DailyViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var components: NSDateComponents!
     var dayNo: Int!
     var day: String = ""
+    var dayNoArray: [Int] = []
     
     var dailyArray: NSArray!
 
@@ -30,6 +31,99 @@ class DailyViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         dailyArray = NSUserDefaults.standardUserDefaults().objectForKey("dailyData") as! NSArray!
         
+        components = calendar!.components(.Weekday, fromDate: date)
+        dayNo = components.weekday
+        
+        switch(dayNo) {
+        case 1:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        case 2:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        case 3:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        case 4:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        case 5:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        case 6:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        case 7:
+            for (var i = 0; i < dailyArray.count; i++) {
+                if dayNo == 7 {
+                    dayNoArray.append(dayNo)
+                    dayNo = 1
+                } else {
+                    dayNoArray.append(dayNo)
+                    dayNo = dayNo + 1
+                }
+            }
+            break
+            
+        default:
+            day = ""
+            break
+        }
+        
         
     }
     
@@ -41,46 +135,38 @@ class DailyViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        components = calendar!.components(.Weekday, fromDate: date)
-        dayNo = components.weekday
-        
-        switch(dayNo) {
+        switch(dayNoArray[indexPath.row]) {
         case 1:
             day = "Sunday"
-            break;
+            break
             
         case 2:
             day = "Monday"
-            break;
+            break
             
         case 3:
             day = "Tuesday"
-            break;
+            break
             
         case 4:
             day = "Wednesday"
-            break;
+            break
             
         case 5:
             day = "Thursday"
-            break;
+            break
             
         case 6:
             day = "Friday"
-            break;
+            break
             
         case 7:
             day = "Saturday"
-            break;
+            break
+            
         default:
             day = ""
-        }
-        
-        if dayNo == 7 {
-            dayNo = 1
-        }
-        else {
-            dayNo = dayNo + 1
+            break
         }
         
         let cell:TableCellTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell_daily") as! TableCellTableViewCell
